@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to right, #ff6b6b, #ffe66d);
+    padding: 10px;
+    font-size: 50px;
+    background-image: linear-gradient(to left, #618264, #B0D9B1);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h2, label {
+    color: #004225;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.convert-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.reset-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p {
+    top: 0;
+    position: fixed;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 150px;
+    color: #004225;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tabs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tab-btn {
+    cursor: pointer;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.celsius-btn {
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+}
+
+/* Warna latar belakang untuk tombol Fahrenheit */
+.fahrenheit-btn {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 165, 0, 1) 100%);
+}
+
+.tab-btn:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.tab-btn:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+
+.tab-btn.active {
+    background-color: aquamarine;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.result {
+    border: #004225 2px solid;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 30px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
